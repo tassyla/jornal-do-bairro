@@ -2,17 +2,6 @@ body{
   background-image:linear-gradient(135deg,#e334af3b,#34e37d6b,#34e37d6b,#e334af3b);
   margin: 20px 20%;
 }
-#menu{
-  height: 50px;
-  line-height: 50px;
-}
-#menu ul li{
-  display: inline-block;
-  width: 150px;
-  text-align: center;
-  font-size: 110%;
-  font-family: 'Nunito Sans', sans-serif;
-}
 header h3{
   font-family: 'Nunito Sans', sans-serif;
   font-size: 120%;
@@ -25,7 +14,7 @@ header h2{
   font-family: 'Lobster', cursive;
   text-align: center;
   color: #0c6934;
-  transition: color 500ms ease;
+  transition: color .5s ease;
   animation: transforma 1s ease-in alternate infinite;
 }
 @keyframes transforma {
@@ -38,6 +27,58 @@ header h2{
 }
 header h2:hover{
   color: #e334af6b;
+}
+#menu{
+  height: 50px;
+  line-height: 50px;
+}
+#menu ul{
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+#menu ul li{
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  font-size: 110%;
+  font-family: 'Nunito Sans', sans-serif;
+  transition: all .5s ease;
+}
+#menu li:hover{
+  background-color: #095e2d6b;
+}
+#menu a{
+  text-decoration: none;
+}
+#menu a:hover{
+  color:black;
+}
+#menu a:active{
+  color: white;
+}
+main h1, main h2{
+  font-family: 'Eczar', serif;
+  font-weight: lighter;
+}
+main h1{
+  margin-top: 100px;
+}
+main a{
+  text-decoration: none;
+}
+main a:link{
+  color: blue;
+}
+main a:visited{
+  color: #e334af6b;
+}
+main article p{
+  color: gray;
+}
+main img{
+  border: 3px solid #e334af3b;
+  border-radius: 10px;
 }
 article img{
   width: 300px;
@@ -59,49 +100,12 @@ footer p{
   line-height: 5px;
   color: white;
 }
-main h1{
-  margin-top: 100px;
-}
-
 iframe{
   display: block;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
-
 p{
   text-align: justify;
-}
-main img{
-  border: 3px solid #e334af3b;
-  border-radius: 10px;
-}
-#menu li:hover{
-  background-color: #095e2d6b;
-}
-#menu a{
-  text-decoration: none;
-}
-#menu a:hover{
-  color:black;
-}
-#menu a:active{
-  color: white;
-}
-main h1, main h2{
-  font-family: 'Eczar', serif;
-  font-weight: lighter;
-}
-main a{
-  text-decoration: none;
-}
-main a:link{
-  color: blue;
-}
-main a:visited{
-  color: #e334af6b;
-}
-main article p{
-  color: gray;
 }
